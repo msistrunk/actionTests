@@ -5,6 +5,6 @@ on:
       - main
 jobs:
   greet:
-    runs-on: ubuntu-lateststeps:
+    runs-on: ubuntu-lateststeps
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
