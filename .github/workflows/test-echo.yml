@@ -3,6 +3,12 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+      inputs:
+        yeet:
+          description: 'you yeet?'
+          required: false
+          default: 'true'
 jobs:
   greet:
     runs-on: ubuntu-latest
